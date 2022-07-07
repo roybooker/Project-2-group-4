@@ -16,36 +16,36 @@ def performance_metrics(df, strategy_name):
     # Initialize the DataFrame with index set to evaluation metrics and columns 
     portfolio_evaluation_df = pd.DataFrame(index=metrics, columns=columns)
     
-    portfolio_evaluation_df.loc['Annualized Return'] = (df['Portfolio Daily Returns'].mean() * 252)
+    portfolio_evaluation_df.loc['Annualized Return'] = (df['strategy_returns'].mean() * 252)
     
-    portfolio_evaluation_df.loc['Cumulative Returns'] = df['Portfolio Cumulative Returns'][-1]
+    portfolio_evaluation_df.loc['Cumulative Returns'] = df['cumulative_Returns'][-1]
     
     # Calculate the Annual volatility metric
-    portfolio_evaluation_df.loc['Annual Volatility'] = (df['Portfolio Daily Returns'].std() * np.sqrt(252)    )
+    portfolio_evaluation_df.loc['Annual Volatility'] = (df['cumulative_Returns'].std() * np.sqrt(252)    )
      
     
     # Calculate the Sharpe ratio
     portfolio_evaluation_df.loc['Sharpe Ratio'] = (
-        df['Portfolio Daily Returns'].mean() * 252) / (
-        df['Portfolio Daily Returns'].std() * np.sqrt(252)
+        df['strategy_returns'].mean() * 252) / (
+        df['strategy_returns'].std() * np.sqrt(252)
     )
     
     # Calculate the Sortino ratio
     # Start by calculating the downside return values
 
     # Create a DataFrame that contains the Portfolio Daily Returns column
-    sortino_ratio_df = df[['Portfolio Daily Returns']].copy()
+    sortino_ratio_df = df[['strategy_returns']].copy()
 
     # Create a column to hold downside return values
     sortino_ratio_df.loc[:,'Downside Returns'] = 0
 
     # Find Portfolio Daily Returns values less than 0, 
     # square those values, and add them to the Downside Returns column
-    sortino_ratio_df.loc[sortino_ratio_df['Portfolio Daily Returns'] < 0, 
-                         'Downside Returns'] = sortino_ratio_df['Portfolio Daily Returns']**2
+    sortino_ratio_df.loc[sortino_ratio_df['strategy_returns'] < 0, 
+                         'Downside Returns'] = sortino_ratio_df['strategy_returns']**2
 
     # Calculate the annualized return value
-    annualized_return = sortino_ratio_df['Portfolio Daily Returns'].mean() * 252
+    annualized_return = sortino_ratio_df['strategy_returns'].mean() * 252
 
     # Calculate the annualized downside standard deviation value
     downside_standard_deviation = np.sqrt(sortino_ratio_df['Downside Returns'].mean()) * np.sqrt(252)
