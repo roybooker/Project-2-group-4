@@ -16,7 +16,7 @@ The project uses various Notebooks to perform the analysis with high level proce
 
 ## High Level Process Flow
 
-*Process Flow Image to be added here*
+![Process Flow Image to be added here](Images/Process%20Flow%20Project%202.jpeg)
 
 
 Each of the notebook and the corresponding process that happens is described as below:
@@ -32,5 +32,31 @@ The notebook performs the following pre-processing using the `Pandas DataFrame` 
 
 In addition, this notebook also performs the following step to prepare the data that can be used by various machine learning models: 
 
-- Calculate the Simple Moving Average (SMA) for perod of 4 days and 50 days which are used as short window and long window
-- Buy / Sell signal calculation based on whether the short window of SMA crosses the long window which is interpreted as **Buy** signal otherwise as the **Sell** signal. 
+- Calculate the Simple Moving Average (SMA) for perod of 4 days and 50 days which are used as short window and long window. This is a features dataset.
+- Buy / Sell signal calculation based on whether the short window of SMA crosses the long window which is interpreted as **Buy** signal otherwise as the **Sell** signal.  This is a target dataset.
+- Both feature and target datasets are then split into training and testing data with 30:70 ratio.  Also further to that, the data is also split into long term data and short term data for training and testing suitable for long term (15 years) and short term (5 years) investing strategy.
+- The training and testing datasets are then exported as `CSV` file and is then saved into the [data folder](data/) to be consumed by the subsequent machine learning models.
+
+## Notebook 2 - Logistic Regression Model
+This [notebook](src/Strategy_LR.ipynb) aims to uses the short term and long term created in the previous step from then [data folder](data/) folder and then analyse the suitability of the [Logistic Regression Model](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression) (which is a type of `Linear Model`) to see if the model is suitable to predict the trading signals for the data.  Various performance indicators and metrics as described below are captured and recorded.  
+
+The following process is applied to analyse the model and capture the metrics.
+
+- The test and training data for both short term and long terms are scaled using `StandardScaler`.
+- The scaled data is then trained with the training data and fit into the Logistic Regression Model.
+- The model is then used for prediction of signals using the testing data with both long term and short term investing strategy.
+- The model is then compared with the actual results and the `Classification Report` is visualised to see the accuracy of the model.
+- Performance metrics such as `Annualized Return`, `Cumulative Returns`, `Annual Volatility`, `Sharpe Ratio	`, `Sortino Ratio`, `Max Actual Return`, `Max Strategy Return`, `SS Lag` and `Max SReturn Lag`	are calculated on the predicted data for both long term and short term investing strategy.
+- The performance metrics are then saved as the `CSV` file which is used by the visualation notebook covered later.
+
+## Notebook 3 - Decision Tree Classifier Model
+This [notebook](src/Strategy_LR.ipynb) aims to uses the short term and long term created in the previous step from then [data folder](data/) folder and then analyse the suitability of the [Logistic Regression Model](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression) (which is a type of `Linear Model`) to see if the model is suitable to predict the trading signals for the data.  Various performance indicators and metrics as described below are captured and recorded.  
+
+The following process is applied to analyse the model and capture the metrics.
+
+- The test and training data for both short term and long terms are scaled using `StandardScaler`.
+- The scaled data is then trained with the training data and fit into the Logistic Regression Model.
+- The model is then used for prediction of signals using the testing data with both long term and short term investing strategy.
+- The model is then compared with the actual results and the `Classification Report` is visualised to see the accuracy of the model.
+- Performance metrics such as `Annualized Return`, `Cumulative Returns`, `Annual Volatility`, `Sharpe Ratio	`, `Sortino Ratio`, `Max Actual Return`, `Max Strategy Return`, `SS Lag` and `Max SReturn Lag`	are calculated on the predicted data for both long term and short term investing strategy.
+- The performance metrics are then saved as the `CSV` file which is used by the visualation notebook covered later.
