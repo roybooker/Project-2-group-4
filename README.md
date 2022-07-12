@@ -16,7 +16,7 @@ The project uses various Notebooks to perform the analysis with high level proce
 
 ## High Level Process Flow
 
-![Process Flow Image to be added here](Images/Process%20Flow%20Project%202.jpeg)
+![Process Flow Image to be added here](images/Process%20Flow%20Project%202.jpeg)
 
 
 Each of the notebook and the corresponding process that happens is described as below:
@@ -95,20 +95,20 @@ All the performance metrics of the notebook which are exported as CSV file from 
 
 Key plots prepared as part of this notebook is as below:
 ### Comparison Cumulative Returns - Long Term.
-![Comparison Cumulative returns -  Long Term](Images/Comparison%20Cumulative%20returns%20-%20%20Long%20Term.png)
+![Comparison Cumulative returns -  Long Term](images/Comparison%20Cumulative%20returns%20-%20%20Long%20Term.png)
 
 
 ### Comparison Cumulative Returns - Short Term.
-![Comparison Cumulative returns -  Short Term](Images/Comparison%20Cumulative%20returns%20-%20%20Short%20Term.png)
+![Comparison Cumulative returns -  Short Term](images/Comparison%20Cumulative%20returns%20-%20%20Short%20Term.png)
 
 ### Lag difference of Max Actual and Strategy return - Long Term
-![Lag difference of Max Actual and Strategy return - Long Term](Images/Lag%20difference%20of%20Max%20Actual%20and%20Strategy%20return%20-%20Long%20Term.png)
+![Lag difference of Max Actual and Strategy return - Long Term](images/Lag%20difference%20of%20Max%20Actual%20and%20Strategy%20return%20-%20Long%20Term.png)
 
 ### Lag difference of Max Actual and Strategy return - Short Term
-![Lag difference of Max Actual and Strategy return - Short Term](Images/Lag%20difference%20of%20Max%20Actual%20and%20Strategy%20return%20-%20Short%20Term.png)
+![Lag difference of Max Actual and Strategy return - Short Term](images/Lag%20difference%20of%20Max%20Actual%20and%20Strategy%20return%20-%20Short%20Term.png)
 
 ### Overall Performance Metrics
-![Performance Metrics](Images/Performance%20Metrics.png)
+![Performance Metrics](images/Performance%20Metrics.png)
 
 ## Findings and Summary
 Summaries to be included here.
