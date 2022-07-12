@@ -1,4 +1,10 @@
-# PROJECT 4 TITLE
+# Grow me the MONEY!!
+
+## Problem Statement
+The stock investing market is quite vast and there are multitudes of different approaches that people use for their stock investing which could be based on Research, Rumours, Advice from family / friends, Professional Advice or in a modern day, Advice from Robots or Machines.
+
+With the advice from the machines, there again are multiples of different models which are in play to predict the price movement on the stock but which one is suitable or performs better across the market? We don't know and we are seeking to find out.
+
 
 ## Objective
 To analyse the S&P 500 trading data for the past 20 years using various machine learning models and provide a visual comparison and evaluation on how each model performs.
@@ -111,14 +117,21 @@ Key plots prepared as part of this notebook is as below:
 ![Performance Metrics](images/Performance%20Metrics.png)
 
 ## Findings and Summary
-Summaries to be included here.
+The analysis and comparison of the vairous models have produced some interesting findings which are summarised as below:
+- Long term investing strategy models performed better than the short term investing strategy
+- Higher SMA window provides better model performance than smaller SMA windows
+- Logistic Regression Model performed best of all the models based on the comparison of all performance metrics.
 
 ## Next Steps
-As a next step, the chosen model which performed the based will be used as the base for the *RoboAdvisor* which will be used by [Amazon]
+The most efficient model can then be used by the [Amazon Lex](https://aws.amazon.com/lex/) based **RoboAdvisor** to advise users on how much returns they can expect on their initial investment.
+RoboAdvisor is not part of this project due to the time constraints.
+
+Other machine learning models or processing technique may need to be trained and tested periodically to assess new technologies or models. The models we completed were considered all that we had time for during the project.
+
 
 
 ## Slide Deck Link
 
 ## Resources
-- [Investing.com](https://au.investing.com/indices/us-spx-500)for S&P 500 Data.
-- [Scikit Learn](https://scikit-learn.org/stable/supervised_learning.html) for various machine.
+- [Investing.com](https://au.investing.com/indices/us-spx-500) for S&P 500 Data.
+- [Scikit Learn](https://scikit-learn.org/stable/supervised_learning.html) for various machine learning models.
