@@ -1,9 +1,11 @@
 # Grow me the MONEY!!
 
+![Grow Me the Money](images/GrowMeTheMoney.jpg)
+
 ## Problem Statement
 The stock investing market is quite vast and there are multitudes of different approaches that people use for their stock investing which could be based on Research, Rumours, Advice from family / friends, Professional Advice or in a modern day, Advice from Robots or Machines.
 
-With the advice from the machines, there again are multiples of different models which are in play to predict the price movement on the stock but which one is suitable or performs better across the market? We don't know and we are seeking to find out.
+With the advice from the machines, there again are multiples of different models which are in play to predict the price movement on the stock but which one is suitable or performs better across the market? We don't know and we are seeking to find out!
 
 
 ## Objective
