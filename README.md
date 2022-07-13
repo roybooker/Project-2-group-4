@@ -110,7 +110,7 @@ Key plots prepared as part of this notebook is as below:
 ![Comparison Cumulative returns -  Short Term](images/Comparison%20Cumulative%20returns%20-%20%20Short%20Term.png)
 
 ### Lag difference of Max Actual and Strategy return - Long Term
-![Lag difference of Max Actual and Strategy return - Long Term](images/Lag%20difference%20of%20Max%20Actual%20and%20Strategy%20return%20-%20Long%20Term.png)
+![Lag difference of Max Actual and Strategy return - Long Term](images/Lag%20difference%20of%20Max%20Actual%20and%20Strategy%20return%20-%20long%20Term.png)
 
 ### Lag difference of Max Actual and Strategy return - Short Term
 ![Lag difference of Max Actual and Strategy return - Short Term](images/Lag%20difference%20of%20Max%20Actual%20and%20Strategy%20return%20-%20Short%20Term.png)
