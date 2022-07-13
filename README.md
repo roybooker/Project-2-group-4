@@ -133,6 +133,7 @@ Other machine learning models or processing technique may need to be trained and
 
 
 ## Slide Deck Link
+[Slide Deck](document/Project%202-%20Presentation%20(Fintech%20Bootcamp).pdf)
 
 ## Resources
 - [Investing.com](https://au.investing.com/indices/us-spx-500) for S&P 500 Data.
