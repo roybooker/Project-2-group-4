@@ -116,7 +116,7 @@ Key plots prepared as part of this notebook is as below:
 ![Lag difference of Max Actual and Strategy return - Short Term](images/Lag%20difference%20of%20Max%20Actual%20and%20Strategy%20return%20-%20Short%20Term.png)
 
 ### Overall Performance Metrics
-![Performance Metrics](images/Performance%20Metrics.png)
+![Performance Metrics](images/PerformanceMetrics.png)
 
 ## Findings and Summary
 The analysis and comparison of the vairous models have produced some interesting findings which are summarised as below:
