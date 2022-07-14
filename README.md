@@ -70,7 +70,7 @@ The following process is applied to analyse the model and capture the metrics.
 - The performance metrics are then saved as the `CSV` file and stored in the [data folder](data/) which is used by the visualation notebook covered later.
 
 ## Notebook 4 - AdaBoost Classifier Model
-Similar to the above notebook, this [notebook](src/adaboost_strategy.ipynb) aims to uses the short term and long term created in the previous step from then [data folder](data/) folder and then analyse the suitability of the [Decision Tree Classifier Model](https://scikit-learn.org/stable/modules/tree.html#classification) (which is a type of `Ensemble Supervised Learning`) to see if the model is suitable to predict the trading signals for the data.  Various performance indicators and metrics as described below are captured and recorded.  
+Similar to the above notebook, this [notebook](src/adaboost_strategy.ipynb) aims to uses the short term and long term created in the previous step from then [data folder](data/) folder and then analyse the suitability of the [AdaBoost Model](https://scikit-learn.org/stable/modules/ensemble.html#adaboost) (which is a type of `Ensemble Supervised Learning`) to see if the model is suitable to predict the trading signals for the data.  Various performance indicators and metrics as described below are captured and recorded.  
 
 The following process is applied to analyse the model and capture the metrics.
 
